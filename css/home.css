@@ -1,0 +1,154 @@
+/* Navbar */
+.navbar{
+	position: relative;
+	z-index: 1; /*mengatur tumpukan di css*/
+}
+.navbar-brand{
+	font-family: Viga;
+	font-size: 32px;	
+}
+
+
+
+
+/* Jumbotron */
+.jumbotron {
+	background-image: url('../img/jumbotron-bg.jpg');
+	background-size: cover;
+	height: 540px;
+	text-align: center;
+	position: relative;
+}
+
+.jumbotron .container{
+	z-index: 1;
+	position: relative;
+}
+
+ .jumbotron::after{
+ 	content: '';
+ 	display: block;
+ 	width: 100%;
+ 	height: 100%;
+ 	background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+ 	position: absolute;
+ 	bottom: 0;
+ }
+
+.jumbotron .display-4{
+	color: white;
+	margin-top: 150px;
+	font-weight: 200;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.62);
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span{
+	font-weight: 500;
+}
+
+.jumbotron .lead{
+	color: white;
+}
+
+
+
+
+/* Info Panel */
+.info-panel {
+	box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+	border-radius: 12px;
+	margin-top: -120px;
+	background-color: white;
+	padding: 30px;
+	padding-bottom: 5px;
+}
+
+
+.info-panel .other-destination {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.info-panel img {
+	width: 230px;
+	height:180px;
+}
+
+.info-panel h4 {
+	text-transform: capitalize;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.info-panel p {
+	font-size: 14px;
+	color: #000000;
+}
+
+
+
+
+
+/* Workingspace*/
+.workingspace {
+	margin-top: 120px;
+	text-align: center;
+}
+
+.workingspace h3 {
+	font-size: 52px;
+	margin-top: 30px;
+}
+
+.workingspace p {
+	font-size: 18px;
+	font-weight: 100;
+	margin-top: 20px;
+}
+
+
+/* Footer */
+.footer p {
+	color: #2F4F4F;
+	font-size: 18px;
+	margin-top: 50px;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+
+	.navbar-brand, .nav-link{
+		color: white !important;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+	}
+	.nav-link{
+	text-transform: uppercase;
+	margin-right: 30px;
+	}
+
+	.nav-link:hover::after{
+		content: '';
+		display: block;
+		border-bottom: 3px solid #0B63DC;
+		width: 50%;
+		margin: auto;
+		padding-bottom: 5px;
+		margin-bottom: -8px;
+	}
+
+	.jumbotron{
+		margin-top: -75px;
+		height: 650px;
+	}
+
+	.jumbotron .display-4 {
+		font-size: 62px;
+	}
+
+	.workingspace {
+		text-align: left;
+	}
+}

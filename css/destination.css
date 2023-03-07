@@ -1,0 +1,49 @@
+/* Navbar */
+.navbar{
+	position: relative;
+	z-index: 1;
+}
+.navbar-brand{
+	font-family: Viga;
+	font-size: 32px;
+	margin-right: 10px;	
+}
+
+
+
+/* Post */
+.post
+  {
+  	margin-bottom:50px;
+  	margin-top:50px;
+  	text-align: center;
+  } 
+
+
+.card-body {
+	text-align: left;
+}
+
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+
+	.navbar-brand, .nav-link{
+		color: white !important;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+	}
+	.nav-link{
+	text-transform: uppercase;
+	margin-right: 30px;
+	}
+
+	.nav-link:hover::after{
+		content: '';
+		display: block;
+		border-bottom: 3px solid #0B63DC;
+		width: 50%;
+		margin: auto;
+		padding-bottom: 5px;
+		margin-bottom: -8px;
+	}
+}
